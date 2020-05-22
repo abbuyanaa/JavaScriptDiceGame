@@ -90,7 +90,7 @@ document.querySelector(".btn-hold").addEventListener("click", function () {
       scores[activePlayer];
 
     // Уг тоглогч хожсон эсэхий (оноо нь 100-с их эсэх) шалгах
-    if (scores[activePlayer] >= 10) {
+    if (scores[activePlayer] >= 100) {
       // Тоглоом дууссан төлөвт оруулна.
       isNewGame = false;
 
