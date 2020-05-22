@@ -11,16 +11,20 @@ var roundScore = 0;
 var dice = Math.floor(Math.random() * 6) + 1;
 
 // <div class="player-score" id="score-0">43</div>
-window.document.querySelector("#score-0").textContent = dice;
+window.document.getElementById("score-0").textContent = 0;
+window.document.getElementById("score-1").textContent = 0;
 
-console.log("Шоо : " + dice);
+window.document.getElementById("current-0").textContent = 0;
+window.document.getElementById("current-1").textContent = 0;
 
-function hello() {
-  console.log("сайн уу");
+diceDom = document.querySelector(".dice");
+diceDom.style.display = "none";
+
+document.querySelector(".btn-roll").addEventListener("click", shooShid);
+
+function shooShid() {
+  var diceNumber = Math.floor(Math.random() * 6) + 1;
+  diceDom.style.display = "block";
+  diceDom.src = "dice-" + diceNumber + ".png";
+  // alert("Шоо буулаа : " + diceNumber);
 }
-
-function greet(aaa) {
-  aaa();
-}
-
-greet(hello);
