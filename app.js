@@ -56,7 +56,7 @@ document.querySelector(".btn-hold").addEventListener("click", function () {
     document.getElementById("name-" + activePlayer).textContent = "WINNER!!!";
     document
       .querySelector(".player-" + activePlayer + "-panel")
-      .classList.add("winnder");
+      .classList.add("winner");
     document
       .querySelector(".player-" + activePlayer + "-panel")
       .classList.remove("active");
